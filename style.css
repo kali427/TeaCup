@@ -52,6 +52,7 @@ body .cover .body {
   position: relative;
   top: 40%;
   border-radius: 10px;
+  z-index: 1;
 }
 
 body .cover .body::before {
@@ -63,5 +64,17 @@ body .cover .body::before {
   border-radius: 44%;
   position: relative;
   bottom: 12px;
+}
+
+body .cover .plate {
+  width: 350px;
+  height: 120px;
+  position: fixed;
+  background-color: #cecece;
+  border-radius: 100px;
+  -webkit-transform: rotateX(70deg);
+          transform: rotateX(70deg);
+  top: 60%;
+  z-index: 0;
 }
 /*# sourceMappingURL=style.css.map */

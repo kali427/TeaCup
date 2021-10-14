@@ -49,6 +49,7 @@ body{
             position: relative;
             top: 40%;
             border-radius: 10px;
+            z-index: 1;
 
             
             &::before{
@@ -61,6 +62,17 @@ body{
                 position: relative;
                 bottom: 12px;
             }
+        }
+
+        .plate{
+            width: 350px;
+            height: 120px;
+            position: fixed;
+            background-color: rgb(206, 206, 206);
+            border-radius: 100px;
+            transform: rotateX(70deg);
+            top: 60%;
+            z-index: 0;
         }
     }
 }
