@@ -1,1 +1,67 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .cover {
+  background-color: pink;
+  width: 450px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .cover .tea {
+  width: 200px;
+  height: 20px;
+  background-color: #d79358;
+  border-radius: 80%;
+  position: fixed;
+  top: 44.7%;
+  z-index: 2;
+}
+
+body .cover .head {
+  position: fixed;
+  width: 200px;
+  height: 30px;
+  top: 43.5%;
+  z-index: 3;
+  border-radius: 44%;
+  border: 1px solid gray;
+}
+
+body .cover .body {
+  height: 200px;
+  width: 200px;
+  background-color: #f0f2f5;
+  position: relative;
+  top: 40%;
+  border-radius: 10px;
+}
+
+body .cover .body::before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 200px;
+  background-color: #f0f2f5;
+  border-radius: 44%;
+  position: relative;
+  bottom: 12px;
+}
+/*# sourceMappingURL=style.css.map */

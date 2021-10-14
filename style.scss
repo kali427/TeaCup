@@ -1,0 +1,66 @@
+// utilities start
+
+$clr : rgb(240, 242, 245);
+
+// utilities end 
+
+body{
+    display: flex;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+
+    .cover{
+        background-color: pink;
+        width: 450px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+
+        .tea{
+            width: 200px;
+            height: 20px;
+            background-color: rgb(215, 147, 88);
+            border-radius: 80%;
+            position: fixed ;
+            top: 44.7%;
+            z-index: 2;
+
+        }
+
+        .head{
+            position: fixed;
+            // background-color: $clr;
+            width: 200px;
+            height: 30px;
+            top: 43.5%;
+            z-index: 3;
+            border-radius: 44%;
+            border: 1px solid gray;
+            
+        }
+
+        .body{
+            height: 200px;
+            width: 200px;
+            background-color: $clr;
+            position: relative;
+            top: 40%;
+            border-radius: 10px;
+
+            
+            &::before{
+                content: "";
+                display: block;
+                height: 30px;
+                width: 200px;
+                background-color: $clr;
+                border-radius: 44%;
+                position: relative;
+                bottom: 12px;
+            }
+        }
+    }
+}
