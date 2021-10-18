@@ -1,0 +1,107 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .cover {
+  background-color: white;
+  width: 450px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .cover .tea {
+  width: 200px;
+  height: 20px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#b8a18c), to(#d79358));
+  background: linear-gradient(to bottom right, #b8a18c, #d79358);
+  border-radius: 80%;
+  position: fixed;
+  top: 44.7%;
+  z-index: 2;
+}
+
+body .cover .head {
+  position: fixed;
+  width: 200px;
+  height: 30px;
+  top: 43.5%;
+  z-index: 3;
+  border-radius: 44%;
+  border: 2px solid white;
+}
+
+body .cover .body {
+  height: 200px;
+  width: 200px;
+  background: -webkit-gradient(linear, right bottom, left top, from(#989899), to(white));
+  background: linear-gradient(to left top, #989899, white);
+  position: relative;
+  top: 40%;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+body .cover .body::before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 200px;
+  background: -webkit-gradient(linear, right bottom, left top, from(#989899), to(white));
+  background: linear-gradient(to left top, #989899, white);
+  border-radius: 44%;
+  position: relative;
+  bottom: 12px;
+}
+
+body .cover .shadow {
+  width: 190px;
+  height: 120px;
+  position: fixed;
+  background: -webkit-gradient(linear, left bottom, right top, from(#989899), to(#9898b6));
+  background: linear-gradient(to right top, #989899, #9898b6);
+  border-radius: 50%;
+  -webkit-transform: rotateX(70deg);
+          transform: rotateX(70deg);
+  top: 63%;
+  opacity: 0.4;
+  z-index: 0;
+  -webkit-box-shadow: 0 0 52px;
+          box-shadow: 0 0 52px;
+}
+
+body .side {
+  height: 100px;
+  width: 150px;
+  background: -webkit-gradient(linear, right bottom, left top, from(#989899), to(white));
+  background: linear-gradient(to left top, #989899, white);
+  position: fixed;
+  top: 50%;
+  left: 52vw;
+  border-radius: 100px;
+}
+
+body .side .inner {
+  height: 60px;
+  width: 130px;
+  background-color: white;
+  border-radius: 100px;
+  position: relative;
+  top: 20px;
+}
+/*# sourceMappingURL=style.css.map */
